@@ -57,7 +57,7 @@ The ***so %*** sources the configuration file, while ***PlugInstall*** installs 
 Essentially, it's the default configuration but with vim-like keybindings to hop among
 windows and some shortcuts to pop up the browser, the terminal and a GUI-based file manager.
 The $Mod key is ALT on my operating system:
-- brave-browser
+- browser
 ```
 Mod+Shift+Enter
 ```
@@ -65,7 +65,7 @@ Mod+Shift+Enter
 ```
 Mod+Enter
 ```
-- pcmanfm (a GUI-based minimal file manager)
+- file manager
 ```
 Mod+Shift+f
 ```
