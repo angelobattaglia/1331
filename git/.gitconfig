@@ -1,0 +1,11 @@
+[user]
+	; git config --global user.name "FIRST_NAME LAST_NAME"
+	name = angelo
+	; git config --global user.email "MY_NAME@example.com"
+[color]
+	ui = true
+[core]
+	; Two ways to set the default editor, you don't need both
+	; git config --global core.editor "vim"
+	; export GIT_EDITOR=vim
+	editor = vim
