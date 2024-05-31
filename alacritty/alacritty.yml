@@ -1,0 +1,50 @@
+# Configuration file for Alacritty
+
+# Window settings
+window:
+  # Background opacity
+  opacity: 0.8
+
+# Gruvbox Dark Theme for Alacritty
+# Colors
+colors:
+  # Default colors
+  primary:
+    background: '0x282828'
+    foreground: '0xebdbb2'
+
+  # Normal colors
+  normal:
+    black:   '0x282828'
+    red:     '0xcc241d'
+    green:   '0x98971a'
+    yellow:  '0xd79921'
+    blue:    '0x458588'
+    magenta: '0xb16286'
+    cyan:    '0x689d6a'
+    white:   '0xa89984'
+
+  # Bright colors
+  bright:
+    black:   '0x928374'
+    red:     '0xfb4934'
+    green:   '0xb8bb26'
+    yellow:  '0xfabd2f'
+    blue:    '0x83a598'
+    magenta: '0xd3869b'
+    cyan:    '0x8ec07c'
+    white:   '0xebdbb2'
+
+# Font settings (Optional)
+font:
+  normal:
+    family: monospace
+    style: Regular
+  size: 12.0
+
+# Key bindings: copy paste with control C/control V
+key_bindings:
+  - { key: V, mods: Control, action: Paste }
+  - { key: C, mods: Control, action: Copy }
+# - { key: V, mods: Control|Shift, action: Paste }
+# - { key: C, mods: Control|Shift, action: Copy }

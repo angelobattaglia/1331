@@ -6,6 +6,6 @@
 	ui = true
 [core]
 	; Two ways to set the default editor, you don't need both
-	; git config --global core.editor "vim"
-	; export GIT_EDITOR=vim
-	editor = vim
+	; git config --global core.editor "nvim"
+	; export GIT_EDITOR=nvim
+	editor = nvim

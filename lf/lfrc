@@ -1,0 +1,23 @@
+## Neovim
+# Press 'V' and name a file to open it with neovim
+# map V push :!nvim<space>
+
+# Alternatively
+
+# Custom command to open the current file in Neovim
+cmd open-in-nvim ${{
+    nvim "$f"
+}}
+
+# Key binding to open the current file in Neovim with 'V'
+map V open-in-nvim
+
+# Open images with sxiv
+cmd openimage ${{
+    case "$f" in
+        *.jpg|*.jpeg|*.png|*.gif) sxiv "$f" ;;
+        *) lf -remote "send $id open" ;;
+    esac
+}}
+map o openimage
+
