@@ -3,4 +3,4 @@ require("abattaglia.settings")
 require("abattaglia.lazy")
 
 -- The following prints
-print("Everything is OK from the abattaglia directory")
+-- print("Everything is OK from the abattaglia directory")

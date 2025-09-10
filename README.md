@@ -1,8 +1,7 @@
-# 1331
+### 1331
 
-- i3 with i3blocks
-- dmenu
-- zsh, neovim, tmux, lf, mosh, pcmanfm
+- i3 with i3blocks and dmenu
 - alacritty
+- zsh, neovim, tmux, lf, mosh, pcmanfm
 - git
 

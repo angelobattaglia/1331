@@ -14,6 +14,17 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     {"rose-pine/neovim", name = "rose-pine"},
     {
+        "ellisonleao/gruvbox.nvim",
+        priority = 1000,
+        config = function()
+            require("gruvbox").setup({
+                contrast = "hard",         -- "soft", "medium", or "hard"
+                transparent_mode = false,  -- true if you want terminal background
+            })
+            vim.cmd.colorscheme("gruvbox")
+        end,
+    },
+    {
         "lervag/vimtex",
         lazy = false,     -- we don't want to lazy load VimTeX
         -- tag = "v2.15", -- uncomment to pin to a specific release
@@ -28,5 +39,6 @@ require("lazy").setup({
     build = ":TSUpdate"}
 })
 
-vim.cmd('colorscheme rose-pine')
+-- I set gruvbox at line 18
+-- vim.cmd('colorscheme rose-pine')
 
