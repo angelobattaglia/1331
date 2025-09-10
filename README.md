@@ -1,10 +1,8 @@
-# Software I use
+# 1331
 
-- OS: GNU/linux with X11
-- Window Managers: i3 with i3blocks
-- Launcher: dmenu
-- Terminal Emulator: alacritty
-- Environment: zsh, Neovim, tmux, mosh
-- Multimedia: mpv, zathura, sioyek, okular, cmus, sxiv, xournal, nitrogen
-- File managers: lf, pcmanfm
+- i3 with i3blocks
+- dmenu
+- zsh, neovim, tmux, lf, mosh, pcmanfm
+- alacritty
+- git
 

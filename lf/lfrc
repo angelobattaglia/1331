@@ -9,6 +9,29 @@ cmd open-in-nvim ${{
     nvim "$f"
 }}
 
+# Smart open: image -> sxiv, text -> nvim, pdf -> zathura (async), else fallback
+cmd open-smart ${{
+    mime=$(file --mime-type -Lb -- "$f")
+    case "$mime" in
+        image/*) nohup /usr/bin/sxiv "$f" >/dev/null 2>&1 & ;;
+        text/*)  nvim -- "$f" ;;   # blocking, as usual
+        application/pdf) nohup zathura "$f" >/dev/null 2>&1 & ;;
+        *) lf -remote "send $id open" ;;
+    esac
+}}
+
+map l open-smart
+map <enter> open-smart
+
+# Map l and Enter to smart open
+map l open-smart
+map <enter> open-smart
+
+
+# Make both l and Enter use the smart opener
+map l open-smart
+map <enter> open-smart
+
 # Key binding to open the current file in Neovim with 'V'
 map V open-in-nvim
 
@@ -20,4 +43,7 @@ cmd openimage ${{
     esac
 }}
 map o openimage
+
+# Opening a .pdf file by default with Atril (a simple GUI pdf viewer) by pressing "o"
+map o ![ "${f##*.}" = "pdf" ] && atril "$f"
 
